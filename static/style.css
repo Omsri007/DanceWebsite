@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    font-size: 29px;
+    margin-right: 255px;
+}
+
+#logo img{
+    height: 42px;
+    /* filter: invert(1); */
+}
+
+#navbar{
+    background-color: #000000;
+    padding: 5px 14px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+#navbar li{
+    list-style: none;
+}
+
+
+#navbar li a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 8px 35px;
+}
+
+#navbar li a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+#introSection {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 65px;
+    align-items: center;
+    background: center/cover no-repeat url("/static/bg.jpg");
+    height: 425px;
+    background-color: red;
+}
+
+#introSection div.small{
+    font-size: 42px;
+    padding: 5px;
+}
+
+#missionSection{
+    height: 326px;
+    width: 100%;
+    margin: auto;
+}
+
+#missionSection h2{
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    padding-top: 12px;
+}
+
+#sponsers{
+    height: 120px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.spImage{
+    height: 118%;
+    margin: 23px;
+    /* filter: invert(1); */
+}
+
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 23px 22px;
+    height: 209px;
+}
+
+.card h3{
+    text-align: center;
+    margin: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img{
+    height: 125px;
+    padding: 0 14px;
+    margin: 5px -15px;
+}
+
+.card-img img{
+    height: inherit;
+    padding: 0 12px;
+}
+
+.card-content{
+    padding: 0 10px;
+}
+
+.card-content p{
+    font-size: 19px;
+}
+
+#sponsorsSection{
+    height: 265px;
+    background-color: hsl(8deg 61% 26% / 87%);
+}
+
+#sponsorsSection h2{
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    padding-top: 12px;
+}
+
+
+
+#footer{
+    display: flex;
+    color: white;
+    height: 60px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+@media (max-width:1330px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar ul{
+        flex-direction: column;
+    }
+
+    #logo{
+        margin-right: 75px;
+        margin-bottom: 50px;
+        font-size: 70px;
+    }
+
+    #logo img{
+        height: 115px;
+    }
+
+    #navbar li a{
+        padding: 15px;
+        font-size: 70px;
+    }
+
+    #introSection div{
+        text-align: center;
+    }
+
+    #missionSection{
+        height: auto;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+        width: 40%;
+    }
+
+    .card-img{
+        height: 102px;
+        padding: 10px 10px;
+    }
+
+    #sponsorsSection{
+        height: 63vh;
+    }
+
+    #sponsers{
+        max-width: 340px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #introSection{
+        height: 50vh;
+    }
+}

@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+    
+block content 
+    section#introSection 
+        div Welcome to Om's Dance Academy 
+        div.small  Eat Dance Sleep Repeat
+
+    section#missionSection 
+        h2 Our Mission 
+        div.card
+            h3 Dance Perfection 
+            div.card-box 
+                div.card-img
+                    img(src="/static/1.jpg")
+                div.card-content 
+                    p  This is the best dance academy of the universe
+        div.card
+            h3 Dance the way you like
+            div.card-box 
+                div.card-img
+                   img(src="/static/2.jpg")
+                div.card-content 
+                    p  This is the best dance academy of the universe
+        div.card
+            h3 Expert Teaching
+            div.card-box 
+                div.card-img
+                    img(src="/static/3.png")
+                div.card-content 
+                    p  This is the best dance academy of the universe
+    section#sponsorsSection 
+        h2 Our Sponsers
+        #sponsers 
+            img(src="/static/logo1.png", alt="Sponsor image", class="spImage")
+            img(src="/static/logo2.png", alt="Sponsor image", class="spImage") 
+            img(src="/static/logo3.jpg", alt="Sponsor image", class="spImage") 
+            img(src="/static/logo4.png", alt="Sponsor image", class="spImage") 

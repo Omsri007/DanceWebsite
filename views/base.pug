@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Om Dance Academy
+    block scripts
+    block style 
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/4.jpg")
+                | ODA 
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact Us]
+
+    block content
+    footer#footer 
+        | Copyright © 2019 Omdanceacademy.com | All rights reserved
